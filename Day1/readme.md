@@ -8,9 +8,7 @@ Learn the basics of Jenkins and install Jenkins on an Ubuntu server.
 
 # What is Jenkins?
 
-## Jenkins
-
-Jenkins is an open-source automation server.
+**Jenkins is an open-source automation server**.
 
 It is used to automate:
 
