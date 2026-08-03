@@ -8,11 +8,30 @@ Learn the basics of Jenkins and install Jenkins on an Ubuntu server.
 
 # What is Jenkins?
 
-Jenkins is an **open-source automation server** used to automate the software development process.
+## Jenkins
+
+Jenkins is an open-source automation server.
+
+It is used to automate:
+
+- Building
+- Testing
+- Deploying software
+
+Jenkins is written in Java.
+
+It can:
+
+- Build applications
+- Run multiple tests
+- Create Docker images
+- Deploy applications
+- Automate repetitive tasks
 
 > **Definition:** Jenkins is a CI/CD tool that automates Build, Test, and Deployment.
 
 ---
+
 
 # What is CI/CD?
 
@@ -27,17 +46,6 @@ Jenkins automatically prepares the application for deployment.
 ### Continuous Deployment
 
 Jenkins automatically deploys the application after successful testing.
-
----
-
-# Why Use Jenkins?
-
-- Automates Build Process
-- Automates Testing
-- Automates Deployment
-- Saves Time
-- Reduces Manual Work
-- Improves Software Quality
 
 ---
 
@@ -58,6 +66,15 @@ Jenkins Agent
      ▼
 Build → Test → Deploy
 ```
+
+---
+
+### CI Workflow
+
+1. Pull
+2. Build
+3. Test
+4. Deploy
 
 ---
 
