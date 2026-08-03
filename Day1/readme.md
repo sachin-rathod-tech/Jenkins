@@ -67,13 +67,13 @@ Build → Test → Deploy
 
 ---
 
-### CI Workflow
-
+### CICD Workflow
+```
 1. Pull
 2. Build
 3. Test
 4. Deploy
-
+```
 ---
 
 # Jenkins Features
