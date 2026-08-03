@@ -156,11 +156,8 @@ sudo systemctl status jenkins
 
 ---
 
-# Allow Port 8080
+# Allow Port 8080 in your security group
 
-```bash
-sudo ufw allow 8080
-```
 
 # Access Jenkins
 
@@ -221,17 +218,6 @@ Stop Jenkins
 sudo systemctl stop jenkins
 ```
 
-Start Jenkins
-
-```bash
-sudo systemctl start jenkins
-```
-
-Enable Jenkins
-
-```bash
-sudo systemctl enable jenkins
-```
 
 ---
 
