@@ -98,44 +98,39 @@ Build → Test → Deploy
 
 ---
 
-# Install Java
+# Install Jenkins
 
-Update packages
+### flow official documentation
+```
+jenkins install for ubuntu
+```
+<img width="844" height="209" alt="image" src="https://github.com/user-attachments/assets/db2a270b-9075-4409-bc08-47a08dc45f81" />
+
+<img width="899" height="319" alt="image" src="https://github.com/user-attachments/assets/7670477d-1a96-433a-8864-192f79130bda" />
+
+
+### Install Java 17
 
 ```bash
 sudo apt update
-```
-
-Install Java 17
-
-```bash
-sudo apt install openjdk-17-jdk -y
-```
-
-Verify Java
-
-```bash
+sudo apt install fontconfig openjdk-21-jre
 java -version
 ```
 
+## Long Term Support release
+<img width="988" height="403" alt="image" src="https://github.com/user-attachments/assets/dc59568a-f741-4f40-831c-0c790efe2b27" />
+
+```
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update
+sudo apt install jenkins
+```
 ---
 
-# Install Jenkins
-
-Add Jenkins Repository Key
-
-```bash
-curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
-/usr/share/keyrings/jenkins-keyring.asc > /dev/null
-```
-
-Add Jenkins Repository
-
-```bash
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-/etc/apt/sources.list.d/jenkins.list > /dev/null
-```
 
 Update Repository
 
@@ -155,17 +150,7 @@ sudo apt install jenkins -y
 
 ```bash
 sudo systemctl start jenkins
-```
-
-Enable Jenkins
-
-```bash
 sudo systemctl enable jenkins
-```
-
-Check Status
-
-```bash
 sudo systemctl status jenkins
 ```
 
@@ -176,14 +161,6 @@ sudo systemctl status jenkins
 ```bash
 sudo ufw allow 8080
 ```
-
-Reload Firewall
-
-```bash
-sudo ufw reload
-```
-
----
 
 # Access Jenkins
 
