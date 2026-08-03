@@ -31,13 +31,12 @@ This repository contains my Jenkins notes, practicals, interview questions, and 
 ```
 Jenkins/
 │
-├── Day-1-Introduction
-├── Day-2-Installation
-├── Day-3-Freestyle-Jobs
-├── Day-4-Pipeline
-├── Day-5-GitHub-Integration
-├── Day-6-Docker
-├── Day-7-Kubernetes
+├── Day-1-Introduction & Installation
+├── Day-2-Freestyle-Jobs
+├── Day-3-Pipeline
+├── Day-4-GitHub-Integration
+├── Day-5-Docker
+├── Day-6-Kubernetes
 ├── Projects
 └── Interview-Questions
 ```
