@@ -64,8 +64,8 @@ pipeline {
 
         stage('Code Deploy') {
             steps {
-                sh 'docker build -t my-pipeline-05 .'
-                sh 'docker run -itd --name cont5 -p 8082:8081 my-pipeline-05'
+                sh 'docker build -t my-pipeline .'
+                sh 'docker run -itd --name my-cont -p 8081:8081 my-pipeline'
             }
         }
     }
