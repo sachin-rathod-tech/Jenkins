@@ -100,7 +100,7 @@ Build → Test → Deploy
 
 # Install Jenkins
 
-### flow official documentation
+### follow official documentation
 ```
 jenkins install for ubuntu
 ```
