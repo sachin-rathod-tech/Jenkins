@@ -14,16 +14,6 @@ A **Jenkins Pipeline** is a collection of stages that automates the software del
 
 ---
 
-# Why Use a Pipeline?
-
-- Automates the CI/CD process
-- Reduces manual work
-- Easy to maintain
-- Faster software delivery
-- Pipeline as Code
-
----
-
 # Pipeline Workflow
 
 ```
@@ -49,20 +39,20 @@ pipeline {
 
     stages {
 
-        stage('Code Pull') {
+        stage ('Code Pull') {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/Alpesh-Rajendra/Project-InsureMe.git'
             }
         }
 
-        stage('Code Build') {
+        stage ('Code Build') {
             steps {
                 sh 'mvn clean package'
             }
         }
 
-        stage('Code Deploy') {
+        stage ('Code Deploy') {
             steps {
                 sh 'docker build -t my-pipeline .'
                 sh 'docker run -itd --name my-cont -p 8081:8081 my-pipeline'
@@ -108,7 +98,7 @@ sh 'docker build -t my-pipeline-05 .'
 Runs the Docker container.
 
 ```groovy
-sh 'docker run -itd --name cont5 -p 8082:8081 my-pipeline-05'
+sh 'docker run -itd --name cont5 -p 8081:8081 my-pipeline-05'
 ```
 
 ---
@@ -138,32 +128,6 @@ Contains the commands executed in a stage.
 ## sh
 
 Executes Linux shell commands.
-
----
-
-# Pipeline Flow
-
-```
-Developer
-      │
-      ▼
-GitHub Repository
-      │
-      ▼
-Jenkins Pipeline
-      │
-      ▼
-Code Pull
-      │
-      ▼
-Maven Build
-      │
-      ▼
-Docker Build
-      │
-      ▼
-Docker Container
-```
 
 ---
 
