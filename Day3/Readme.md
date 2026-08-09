@@ -39,3 +39,26 @@ sudo usermod -aG docker ubuntu
 newgrp docker
 sudo chmod 777 /var/run/docker.sock
 ```
+##  Connect to Jenkins 
+```
+public-ip:8080
+```
+##  Install Required Plugins:
+   **Install below plugins**
+
+````
+Amazon ECR
+````
+````
+SonarQube Scanner
+````
+````
+docker All
+````
+````
+stage view
+````
+```
+maven
+```
+
