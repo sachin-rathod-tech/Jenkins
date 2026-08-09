@@ -30,7 +30,8 @@ S3 publisher
 
 <img width="846" height="313" alt="image" src="https://github.com/user-attachments/assets/99b34bb9-cc2d-4e39-981b-ea5285e20ca4" />
 
-## create s3 bucker
+## create s3 Buckets
+
 
 ## new job
 ```
