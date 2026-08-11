@@ -6,7 +6,6 @@ Configure Jenkins Master-Agent node architecture, set up SSH authentication, and
 ---
 
 ## Prerequisites & Setup
-- Delete previous cluster if exists: `kubectl delete cluster --name eks-sachin`
 - Launch 2 EC2 instances (`c7i-flex.large`, 30GB SSD each)
 - **Master Setup:** Install Java & Jenkins
 - **Agent Setup:** Install Java only
@@ -66,16 +65,18 @@ chmod 777 authorized_keys
 * Private Key: Select Enter directly and paste Master's Private Key
 
 ### Add Node
-* Go to Manage Jenkins -> Nodes -> New Node
-* Node Name: agent01
-* Type: Permanent Agent
-* Number of executors: 1
-* Remote root directory: /home/ubuntu/main
-* Labels: sachin
-* Usage: Use this node as much as possible
-* Launch Method: Launch agents via SSH
-* Host: Agent_Public_IP
-* Host Key Verification Strategy: Non-verifying Verification Strategy
+
+#### Go to Manage Jenkins -> Nodes -> New Node
+
+* **Node Name:** agent01
+* **Type:** Permanent Agent
+* **Number of executors:** 1
+* **Remote root directory:** /home/ubuntu/main
+* **Labels:** sachin
+* **Usage:** Use this node as much as possible
+* **Launch Method:** Launch agents via SSH
+* **Host:** Agent_Public_IP
+* **Host Key Verification Strategy:** Non-verifying Verification Strategy
 
 ---
 
