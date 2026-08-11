@@ -36,7 +36,7 @@ Jenkins/
 ├── Day-3-SonarQube
 ├── Day-4-Trivy
 ├── Day-5-Netflix-project
-├── Day-6-Project Myntra/k8s
+├── Day-6-Project Myntra/eks/argoCD
 ├── Day-7-Agent setup
 └── Readme.md
 ```
