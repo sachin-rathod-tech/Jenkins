@@ -32,13 +32,13 @@ This repository contains my Jenkins notes, practicals, interview questions, and 
 Jenkins/
 │
 ├── Day-1-Introduction & Installation
-├── Day-2-Freestyle-Jobs
-├── Day-3-Pipeline
-├── Day-4-GitHub-Integration
-├── Day-5-Docker
-├── Day-6-Kubernetes
-├── Projects
-└── Interview-Questions
+├── Day-2-Pipeline
+├── Day-3-SonarQube
+├── Day-4-Trivy
+├── Day-5-Netflix-project
+├── Day-6-Project Myntra/k8s
+├── Day-7-Agent setup
+└── Readme.md
 ```
 
 ## Tools Used
