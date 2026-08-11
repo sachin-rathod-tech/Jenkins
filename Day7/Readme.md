@@ -1,28 +1,25 @@
-# Jenkins Day 7 - Agent
+# Jenkins Day 7 - Master Agent Architecture
 
-## 📌 Topic: Jenkins Agent
-
-### 🔹 What is Jenkins Agent?
-
-Jenkins Agent is a machine that executes Jenkins jobs and pipelines.
-
-- Master → Controls Jenkins
-- Agent → Executes the jobs
+## Objective
+Configure Jenkins Master-Agent node architecture, set up SSH authentication, and deploy applications using declarative pipelines.
 
 ---
 
-## 🔹 Instance Create
-
-Create 2 EC2 instances:
-
-1. Master
-   - Java
-   - Jenkins
-
-2. Agent
-   - Java only
+## Prerequisites & Setup
+- Delete previous cluster if exists: `kubectl delete cluster --name eks-sachin`
+- Launch 2 EC2 instances (`c7i-flex.large`, 30GB SSD each)
+- **Master Setup:** Install Java & Jenkins
+- **Agent Setup:** Install Java only
 
 ---
+
+## Hostname Configuration
+```bash
+# On Master Node
+hostnamectl set-hostname master
+
+# On Agent Node
+hostnamectl set-hostname agent
 
 ## 🔹 Change Hostname
 
